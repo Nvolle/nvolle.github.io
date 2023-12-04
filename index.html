@@ -1,579 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>Portfolio Nicolas Volle - BTS SIO</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="assets/img/logo-certa.png" rel="icon">
-  <link href="assets/img/logo-certa.png" rel="logo-certa">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nicolas Volle - Portfolio</title>
   <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/img/logo_cfa_eve.png" rel="icon">
+  <!-- Google Fonts -->
 
-  <!-- =======================================================
-  * Template Name: iPortfolio - v3.7.0
-  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
-
 <body>
-
-  <!-- ======= Mobile nav toggle button ======= -->
-  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
-
-  <!-- ======= Header ======= -->
-  <header id="header">
-    <div class="d-flex flex-column">
-
-      <div class="profile">
-        <img src="assets/img/profil-img.jpg" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="index.html">Nicolas Volle</a></h1>
+  <header>
+    <div class="menu">
+      <div class="infobulle">
+        <img src="assets/img/profil-img.jpg" alt="photoNV" class="profil_img">
+        <h1><a href="index.html">Nicolas Volle</a></h1>
       </div>
-
-      <nav id="navbar" class="nav-menu navbar">
+      <nav id="navbar">
         <ul>
-          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Accueil</span></a></li>
-          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>A propos</span></a></li>
-          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Parcours</span></a></li>
-          <li><a href="#services" class="nav-link scrollto"><i class="bx bx-briefcase-alt-2"></i> <span>L'école et le BTS SIO</span></a></li>
-          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Réalisations</span></a></li>
-          <li><a href="#watch" class="nav-link scrollto"><i class="bx bx-analyse"></i> <span>Veille technologique</span></a></li>
-          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-file"></i> <span>Documents</span></a></li>
+          <li><a href="#accueil"><i class="navButton navButtonAccueil"></i> <span>Accueil</span></a></li>
+          <li><a href="#profil"><i class="navButton navButtonProfil"></i> <span>Présentation</span></a></li>
+          <li><a href="#parcours"><i class="navButton navButtonParcours"></i> <span>Parcours</span></a></li>
+          <li><a href="#formation"><i class="navButton navButtonFormation"></i> <span>Formation</span></a></li>
+          <li><a href="#realisations"><i class="navButton navButtonRealisation"></i> <span>Réalisations</span></a></li>
         </ul>
-      </nav><!-- .nav-menu -->
+      </nav>
     </div>
-  </header><!-- End Header -->
+  </header>
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
-    <div class="hero-container" data-aos="fade-in">
-      <h1>Nicolas Volle</h1>
-      <p>Développeur <span class="typed" data-typed-items="PHP, HTML, CSS, JavaScript, PHP Symfony"></span></p>
-    </div>
-  </section><!-- End Hero -->
 
-  <main id="main">
-
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>A propos</h2>
-          <p></p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4" data-aos="fade-right">
-            <img src="assets/img/profil-img.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>Développeur Web PHP</h3>
-            <p class="fst-italic">
-              Utilisation des langages Web et maîtrise de PHP sous Symfony
-            </p>
-            <p>
-              Etant fraîchement diplômé d’un Brevet de technicien supérieur - Services informatiques aux organisations option Solution Logicielle Appliquée au métier, je suis actuellement à la recherche d’un poste de développeur informatique. <br/>
-              Mon cursus ayant été réalisé en alternance, j’ai été enrichi par deux années de travail en tant que développeur PHP pour Teamwill group. Ces deux années, ainsi que l’année précédente en tant qu’Assistant de Gestion pour Acumass m’ont permis de connaître le cadre de l’entreprise, les responsabilités d’un poste et le travail au sein d’une équipe. <br/>
-              J’ai également appris au fil de ces deux années, avec le langage PHP utilisé au sein de mon entreprise, d’autres langages, tels que HTML, CSS et Java. Je suis cependant curieux et disposé à en découvrir de nouveaux si nécessaire.<br/>
-              Dynamique et motivé, je suis prêt à découvrir de nouvelles choses dans votre entreprise et ainsi devenir un élément moteur d’équipe dans votre entreprise.
-            </p>
-          </div>
-        </div>
-        <br/>
-
-        <div class="row">
-          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>L'entreprise</h3>
-            <p class="fst-italic">
-              Utilisation des langages Web et maîtrise de PHP sous Symfony
-            </p>
-            <p>
-              Teamwill, ETI et fleuron des scale-up françaises, est le leader national des solutions Métiers & SI dédiées au crédit et aux financements spécialisés. <br/>
-              Ses 350 consultants-experts vous accompagnent dans la redéfinition de vos processus Front to Back et l’intégration des principales solutions progicielles du marché : Distribution, Octroi, Gestion, Recouvrement, Risque et Comptabilité. <br/>
-              Anis Chakroun, président de Teamwill a su imposer, avec ses équipes et son top management, les bases d’une stratégie agile et efficiente de croissance pérenne et internationale qui vise le leadership européen par une double croissance, interne et externe. <br/>
-              Son portefeuille de clients est composé des acteurs internationaux majeurs de la banque de détail, des sociétés financières spécialistes du crédit à la consommation, du leasing ou, du crédit automobile.
-            </p>
-          </div>
-          <div class="col-lg-4" data-aos="fade-right">
-            <img src="assets/img/logo-tw.jpg" class="img-fluid" alt="">
-          </div>
-        </div>
-
+  <h1>Bienvenue sur mon portfolio</h1>
+  <section>
+    <h2>Profil</h2>
+    <!-- TODO :
+    - Qui suis-je?
+    - CV téléchargeable + visionnable
+    - Passions
+    -->
+    <div>
+      <div>
+        <img src="assets/img/profil-img.jpg" alt="photoNV">
       </div>
-    </section><!-- End About Section -->
-
-    <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Compétences</h2>
-        </div>
-
-        <div class="row skills-content">
-          <h3>Informatique</h3>
-          <div class="col-lg-6" data-aos="fade-up">
-
-            <div class="progress">
-              <span class="skill">JAVA, C, SQL</span>
-              <span class="skill"><b>Développement Web</b> : HTML, CSS, JavaScript, PHP</span>
-            </div>
-
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="progress">
-              <span class="skill">C++, C#, Python, Algo(autoformation)</span>
-            </div>
-
-          </div>
-
-          <h3>Langues</h3>
-          <div class="col-lg-6" data-aos="fade-up">
-
-            <div class="progress">
-              <span class="skill">Français - Langue maternelle</span>
-              <span class="skill">Allemand - Niveau B1</span>
-            </div>
-
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="progress">
-              <span class="skill">Anglais - Niveau B2</span>
-              <span class="skill">Chinois - Notions</span>
-            </div>
-
-          </div>
-        </div>
-
+      <div>
+        <h3>Développeur Fullstack</h3>
+        <p class="written">
+          Après l'obtention de mon Brevet de technicien supérieur - Services informatiques aux organisations, option Solution Logicielle Appliquée au métier, j'ai fait le choix de continuer dans mon cursus de développeur web en choississant la Licence Professionnelle Métiers de l’informatique : applications web.<br/>
+          Mon cursus ayant été réalisé en alternance, j’ai été enrichi par deux années de travail en tant que développeur PHP pour Teamwill group. <br/>
+          Aujourd'hui développeur web au sein de l'entreprise Shop-Hair, je continue de développer mes compétences dans le domaine du développement. <br/>
+        </p>
       </div>
-    </section><!-- End Skills Section -->
-
-    <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Parcours</h2>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-6" data-aos="fade-up">
-            <h3 class="resume-title">Formations et diplômes</h3>
-            <div class="resume-item">
-              <h4>BACHELOR INGÉNIERIE DE LA 3D ET DES JEUX VIDÉO</h4>
-              <h5>2022 - 2023</h5>
-              <p><em>ESGI, École Supérieure de Génie Informatique</em></p>
-              <p>Formation prévisionnelle</p>
-            </div>
-            <div class="resume-item">
-              <h4>BTS SIO - Option Solution Logicielle Appliquée aux Métiers</h4>
-              <h5>2020 - 2022</h5>
-              <p><em>Ecole IRIS Paris</em></p>
-              <p>En cours d'obtention</p>
-            </div>
-            <div class="resume-item">
-              <h4>Brevet d'aptitude aux fonctions d'animateur en accueils collectifs de mineurs</h4>
-              <h5>2017 - 2021</h5>
-              <p><em>Scouts et Guides de France</em></p>
-              <p>Qualification Accueil de Scoutisme</p>
-            </div>
-            <div class="resume-item">
-              <h4>Permis B</h4>
-              <h5>2016</h5>
-            </div>
-            <div class="resume-item">
-              <h4>Baccalauréat Scientifique</h4>
-              <h5>2015</h5>
-              <p><em>Lycée Saint-Pierre - Brunoy</em></p>
-              <p>Mention assez bien</p>
-            </div>
-          </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Expériences professionnelles</h3>
-            <div class="resume-item">
-              <h4>Développeur PHP</h4>
-              <h5>Octobre 2020 - Aujourd'hui</h5>
-              <p><em>TeamWill</em></p>
-              <ul>
-                <li>Assurer la maintenance applicative et mettre en place des évolutions sur un logiciel</li>
-                <li>Utiliser des compétences de développement web (PHP, HTML, CSS, JavaScript) et la connaissance du framework Symfony</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Assistant de gestion d'annuités</h4>
-              <h5>Juillet 2018 - Juillet 2020</h5>
-              <p><em>Acumass</em></p>
-              <ul>
-                <li>Gestion d’annuités dans la propriété intellectuelle</li>
-                <li>Utilisation de logiciels de traitement (Word, Excel) et du progiciel Siss</li>
-                <li>Contact avec le client</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Enquêteur vacataire</h4>
-              <h5>2016 - 2019</h5>
-              <p><em>Cositrex</em></p>
-              <ul>
-                <li>Réalisation d’enquête de rotation du stationnement et de circulation</li>
-                <li>Utilisation de la suite Office (notamment Access) pour le traitement des données recueillies</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Animateur commercial</h4>
-              <h5>Décembre 2017</h5>
-              <p><em>Nestlé</em></p>
-              <ul>
-                <li>Animation au point de vente proposant des réductions à la clientèle</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Resume Section -->
-
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Formation en cours</h2>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>Iris Paris </h3>
-            <p class="fst-italic">
-              L’IRIS, L’ECOLE SUPÉRIEURE D’INFORMATIQUE
-            </p>
-            <p>
-              L’IRIS, L’Ecole Supérieure d’Informatique, est membre du Groupe IPF, fondé en 1936. C’est la 1ère école en France pour le BTS SIO.<br/>
-              L’IRIS, est aujourd’hui une école reconnue pour la qualité de ses formations.<br/>
-              L’école s’est donnée pour vocation de proposer à tous les jeunes, quel que soit le parcours scolaire, l’accès le plus direct au milieu professionnel de l’informatique et du numérique.<br/>
-              IRIS en quelques chiffres :
-              <ul>
-                <li>Plus de 600 étudiants et apprenants en alternance</li>
-                <li>5 formations reconnues</li>
-                <li>40 enseignants et consultants</li>
-                <li>Plus de 600 entreprises partenaires</li>
-                <li>2 200 m² de locaux ultra-modernes équipés des dernières technologies, basés à Paris (17è).</li>
-              </ul>
-            </p>
-          </div>
-          <div class="col-lg-4" data-aos="fade-right">
-            <img src="assets/img/logo-iris.png" class="img-fluid" alt="">
-          </div>
-        </div>
-        <br/>
-        <div class="section-title">
-          <h3>Le BTS SIO</h3>
-          <p>Le BTS Services Informatiques aux Organisations est un diplôme recconu par l'état de niveau BAC+2.<br/>
-            Il remplace depuis Septembre 2011, l'ancien BTS IG (Informatique de gestion).<br/>
-            En effet, cette nouvelle formule réponds aux attentes de la profession en matière de qualification.<br/>
-            Le programme a évolué en fonction de la place et du rôle des TIC (Technologies de l'Information et de la Communication)<br/>
-            Et propose deux spécialités bien distinctes : Le BTS SIO Option SISR et le BTS SIO Option SLAM.
-          </p>
-          <p class="fw-bold">Les options :</p>
-        </div>
-        <div class="row">
-          <div class="col-lg-6" data-aos="fade-up">
-            <h4>Option SISR </h4>
-            <p class="fst-italic">
-              SOLUTIONS D'INFRASTRUCTURES SYSTÈMES ET RÉSEAUX
-            </p>
-            <p>
-              La spécialisation SISR du BTS SIO permet d’apprendre un métier qui consiste à installer, 
-              configurer et gérer les équipements et les réseaux informatiques. 
-              Cela signifie intervenir sur la conception, la mise en place, le déploiement et la maintenance de programmes 
-              destinés à la gestion au sein d’une organisation.
-            </p>
-          </div>
-          <div class="col-lg-6" data-aos="fade-up">
-            <h4>Option SLAM </h4>
-            <p class="fst-italic">
-              SOLUTIONS LOGICIELLES ET APPLICATIONS MÉTIERS
-            </p>
-            <p>
-              La spécialisation SLAM du BTS SIO est elle plus orientée Développement. 
-              Elle permet d'apprendre à réaliser des logiciels, sites webs, applications mobiles, 
-              mais aussi de rédiger des documentations techniques liées à celles-ci. 
-              De plus, elle permet d'apprendre à former des utilisateurs pour gérer la maintenance des applications.
-            </p>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Services Section -->
-
-    <!-- ======= Portfolio Section ======= -->
-    <!-- TODO mettre des images et réduire les paragraphes -->
-    <section id="portfolio" class="portfolio section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Réalisations</h2>
-        </div>
-
-        <div class="row" data-aos="fade-up">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">Tout sélectionner</li>
-              <li data-filter=".filter-school">Réalisations en formation</li>
-              <li data-filter=".filter-work">Réalisation en entreprise</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-school">
-            <div class="portfolio-wrap">
-              <h3>Installation et configuration d'un serveur virtualisé avec la gestion des incident GLPI</h3>
-              <h4>Compétences relatives à l'activité :</h4>
-              <ul>
-                <li>Création et administration de machines virtuelles (Oracle VMBox)</li>
-                <li>Déploiement et utilisation d'un gestionnaire d'incidents (GLPI)</li>
-              </ul>
-              <p>
-                Au cours de notre première année, nous avons été amenés à mettre en place un gestionnaire d'incidents (GLPI).<br/>
-                Cette mise en place a nécessité l'utilisations de machines virtuelles créées sous Oracle VMBox.<br/>
-                Sous VMBox, nous avons donc créé une machine virtuelle Windows Server ainsi que deux machines virtuelles Windows 7 Pro.<br/>
-                Une fois les machines créées et paramétrées, nous avons ensuite paramétré l'outil GLPI et avons créé un ticket pour tester cette mise en place.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-school">
-            <div class="portfolio-wrap">
-              <h3>Développement d'un portefolio avec le CMS Wordpress</h3>
-              <h4>Compétences relatives à l'activité :</h4>
-              <ul>
-                <li>Mise en place d'un CMS (Wordpress)</li>
-                <li>Utilisation d'un hébergeur web (000webhost)</li>
-                <li>Utilisation d'une plateforme de développement web (WampServer)</li>
-                <li>Manipulation d'une base de données, importer et exporter sa base de travail</li>
-              </ul>
-              <p>
-                Au cours de notre seconde année, nous avons été amenés à créer un portfolio avec le Système de Gestion de Contenu (ou CMS : Content Management System) Wordpress.<br/>
-                Ce portfolio avait pour but de nous présenter, d'y intégrer notre CV, notre parcours, ainsi que ce que nous voyions en cours de développement dans différents langages : 
-                dans un langage algorithmique, en PHP et en C. Le module en PHP devait être interactif.<br/>
-                Ce travail étant en groupe et le rendu devant être présenté sans héberger localement ce site, nous devions apprendre à manipuler une base de données pour travailler avec les mêmes bases, 
-                et nous avons aussi dû nous servir d'un hébergeur web, nous donc avons choisi 000webhost pour sa compatibilité avec Wordpress et sa gratuité.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-school">
-            <div class="portfolio-wrap">
-              <h3>Conception et développement du site internet troc.fr avec la technologie PHP-MySQL et HTML-CSS en utilisant le modèle MVC</h3>
-              <h4>Compétences relatives à l'activité :</h4>
-              <ul>
-                <li>Utilisation d'un langage de base de données (SQL) et d'un système de gestion de base de données (MySQL)</li>
-                <li>Utilisation de langages web (HTML, CSS, PHP, Javascript)</li>
-                <li>Utilisation d'un service web d'hébergement et de gestion de versions (Github)</li>
-              </ul>
-              <p>
-                Au cours de notre seconde année, nous avons été amenés à créer un site de troc pour les enfants d'un quartier.<br/>
-                Ce travail étant en groupe, nous avons utilisé Github pour gérer notre collaboration et éviter tout conflit lorsque nous développions chacun des parties différentes du site.<br/>
-                Ce projet nous a amené à créer et gérer une base de données et ses interactions avec le site. 
-                Cette base fut dotée de vues pour gérer des tables nécessitant des informations d'une autre table, ainsi que des déclencheurs pour la mise à jour automatiques de données telles que la date actuelle.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-work">
-            <div class="portfolio-wrap">
-              <h3>Apprentissage de l'utilisation de PHP et du framework Symfony</h3>
-              <h4>Compétences relatives à l'activité :</h4>
-              <ul>
-                <li>Découverte et mise en pratique d'un langage de programmation (PHP) et d'un framework (Symfony)</li>
-                <li>Utilisation d'une plateforme de développement web (WampServer)</li>
-                <li>Configuration d'un ordinateur pour le travail en local</li>
-                <li>Utilisation d'une documentation et d'un tutoriel en ligne</li>
-              </ul>
-              <p>
-                A mon arrivée dans l'entreprise, j'ai dû apprendre les bases du langage PHP car la majorité du projet sur lequel je travaillerais est écrit dans ce langage.<br/>
-                Ce même projet ayant été développé à l'aide du framework Symfony, j'ai également du apprendre son fonctionnement en suivant la formation présente sur le site officiel.<br/>
-                Cette formation nécessitait de mettre en place un environnement de développement, notamment via l'outil WampServer et la modification de fichier Windows.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-work">
-            <div class="portfolio-wrap">
-              <h3>Mise en page de la page d'accueil du logiciel de l'entreprise</h3>
-              <h4>Compétences relatives à l'activité :</h4>
-              <ul>
-                <li>Mise en application de langages web (HTML & CSS)</li>
-                <li>Réaliser des tests d'intégration</li>
-              </ul>
-              <p>
-                La page d'accueil du logiciel devait faire paraître une image d'accueil.<br/>
-                Mon but était donc de définir l'espace disponible pour faire paraître cette image et en définir des dimensions standards.<br/>
-                Il était aussi nécessaire de modifier le code du site pour faire apparaître l'image entièrement sans qu'elle ne soit écrasée par le site.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-work">
-            <div class="portfolio-wrap">
-              <h3>Découverte de l'administration du réseau de l'entreprise</h3>
-              <h4>Compétences relatives à l'activité :</h4>
-              <ul>
-                <li>Découverte de l'interface Cisco Meraki</li>
-                <li>Réaliser des tests d'intégration</li>
-              </ul>
-              <p>
-                J'ai pu passer une journée avec le responsable réseau de mon entreprise, qui m'a appris comment était administré les différents réseaux de l'entreprise et comment conserver sa sécurité.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-work">
-            <div class="portfolio-wrap">
-              <h3>Fusion de deux branches distinctes d'un projet</h3>
-              <h4>Compétences relatives à l'activité :</h4>
-              <ul>
-                <li>Utilisation de langages web (HTML, CSS, PHP)</li>
-                <li>Utilisation d'un service web d'hébergement et de gestion de versions (Github)</li>
-                <li>Utilisation des fonctionnalités de VSCode de pair avec Github</li>
-              </ul>
-              <p>
-                Depuis quelques temps, des branches distinctes d'un projet de notre entreprises se sont créées avec des différences plus ou moins impactantes.<br/>
-                J'ai eu pour mission de fusionner si possible ces deux branches, tout en nettoyant les modifications bloquantes ou obsolètes.<br/>
-                Pour cela, j'ai dû utiliser les outils proposés par Git pour comparer les branches et réaliser des tests pour voir quelles modifications étaient 
-                impactantes et dans quelle mesures elles rentraient en conflit avec l'autre branche.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-work">
-            <div class="portfolio-wrap">
-              <h3>Mise en place de gestion d'exceptions et correction d'erreur</h3>
-              <h4>Compétences relatives à l'activité :</h4>
-              <ul>
-                <li>Utilisation de langages web (HTML, CSS, PHP)</li>
-                <li>Utilisation d'un service web d'hébergement et de gestion de versions (Github)</li>
-              </ul>
-              <p>
-                Des problèmes survenaient chez nos clients lorsqu'ils effectuaient certaines tâche d'archivage.<br/>
-                J'ai donc dû approfondir mes connaissances dans le langage PHP et dans son fonctionnement avec des applications externes pour mettre en place 
-                une gestion d'exception qui détecterait lorsqu'il y aurait des problème dans le fonctionnement normal du logiciel et retourner l'erreur incriminée.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-work">
-            <div class="portfolio-wrap">
-              <h3>Découverte et utilisation d'API de transfert de données</h3>
-              <h4>Compétences relatives à l'activité :</h4>
-              <ul>
-                <li>Découverte de logiciels d'interactions avec des API (Postman)</li>
-              </ul>
-              <p>
-                Un problème était étroitement lié à la gestion d'exception que j'avais mise en place précédemment, 
-                en effet certains soucis continuaient d'exister et il fallait pour cela que je comprenne le fonctionnement d'une API 
-                (Application Programming Interface ou Interface de Programmation)  afin de la modifier pour comprendre d'où venait l'erreur.
-              </p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Portfolio Section -->
-
-    <!-- ======= Watch Section ======= -->
-    <section id="watch" class="watch section-bg">
-      <div class="container">
-        <div class="section-title" data-aos="fade-up" data-aos-delay="100">
-          <h2>Veille technologique</h2>
-        </div>
-        <div data-aos="fade-up" data-aos-delay="100">
-          <p><b>Voici une liste d'articles qui ont retenus mon attention concernant le framework Symfony.</b></p>
-        </div>
-        <div data-aos="fade-up" data-aos-delay="100">
-          <p><a href="https://www.digitaljournal.com/pr/php-web-frameworks-software-market-size-share-potential-growth-top-manufactures-competitive-analysis-and-research-forecasts-2022-to-2028">PHP Web Frameworks Software Market Size, Share, Potential Growth, Top Manufactures, Competitive Analysis and Research Forecasts 2022 to 2028</a>
-          - <i>30 mars 2022</i></p>
-          <p>Le rapport sur le marché des logiciels PHP Web Frameworks fournit des informations globales sur la dynamique du marché, la taille du marché, les tendances actuelles, les problèmes, les principaux moteurs, les innovations technologiques, les défis, les opportunités, les prévisions, l’analyse de la concurrence et les stratégies d’entrée pour diverses entreprises telles que Laravel, Phalcon Framework, CakePHP, Zend, Swole, Symfony.</p>
-        </div>
-        <br/>
-        <div data-aos="fade-up" data-aos-delay="100">
-          <p><a href="https://portswigger.net/daily-swig/bittersweet-symfony-devs-accidentally-turn-off-csrf-protection-in-php-framework">Bittersweet Symfony: Devs accidentally turn off CSRF protection in PHP framework</a>
-          - <i>3 février 2022</i></p>
-          <p>Les développeurs du framework PHP Symfony ont annulé une modification récente qui a désactivé par inadvertance la protection contre les attaques de falsification de requête intersite (CSRF).</p>
-        </div>
-        <br/>
-        <div data-aos="fade-up" data-aos-delay="100">
-          <p><a href="https://www.programmez.com/actualites/symfony-6-v6-en-approche-33304">Symfony 6 : v6 en approche !</a>
-          - <i>25 novembre 2021</i></p>
-          <p>Symfony 6 doit sortir dans quelques jours. SensioLabs l’a annoncé mi-novembre. La version n’est pas une LTS, son support prendra fin en juillet 2022. Cette version doit retirer toutes les fonctionnalités dépréciées encore présentes dans la 5.4. </p>
-        </div>
-        <br/>
-        <div data-aos="fade-up" data-aos-delay="100">
-          <p><a href="https://www.developpez.com/actu/177039/Framework-PHP-Symfony-4-0-automatise-l-installation-de-paquets-et-la-configuration-et-reduit-de-70-pourcent-la-taille-des-applications/">Framework PHP : Symfony 4.0 automatise l'installation de paquets et la configuration</a>
-          - <i>4 décembre 2017</i></p>
-          <p>SensioLabs a annoncé il y a quelques jours la sortie du Symfony 4.0.0, un ensemble de composants PHP ainsi qu'un framework écrit en PHP qui fournit des fonctionnalités modulables et adaptables qui permettent de faciliter et d’accélérer le développement d'un site Web.</p>
-        </div>
-      </div>
-    </section><!-- End Watch Section -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>iPortfolio</span></strong>
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      <button type="button" class="downloadLink">Télécharger mon CV</button>
+      <button type="button" class="collapsible">Visualiser mon CV</button>
+      <div class="content">
+        <iframe src="assets/docs/VolleNicolas-CurriculumVitaePortfolio.pdf" height="700" width="700"></iframe>
       </div>
     </div>
-  </footer><!-- End  Footer -->
+  </section>
+  <section>
+    <h2>Parcours</h2>
+      <!-- TODO :
+      -	Ma formation, description de mes formations
+      -	Mes compétences techniques…
+      -	Mes expériences (stages) 
+      -->
+      <div>
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+      </div>
+  </section>
+  <section>
+    <h2>Projets</h2>
+    <!-- TODO :
+    - Réalisations
+    - Projet professionnel
+    -->
+  </section>
+  <section>
+    <h2>Documents</h2>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  </section>
 
-  <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
 </body>
-
 </html>
