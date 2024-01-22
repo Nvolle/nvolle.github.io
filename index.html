@@ -6,83 +6,159 @@
   <title>Nicolas Volle - Portfolio</title>
   <link href="assets/css/style.css" rel="stylesheet">
   <link href="assets/img/logo_cfa_eve.png" rel="icon">
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div class="menu d-flex flex-column">
-      <div class="infobulle">
-        <img src="assets/img/profil-img.jpg" alt="photoNV" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="index.html">Nicolas Volle</a></h1>
-      </div>
-      <nav id="navbar" class="navbar">
+  <section id="sidebar">
+    <img id="profil-img" src="assets/img/profil-img.jpg" alt="photoNV">
+    <h1>Nicolas Volle</h1>
+    <nav>
+      <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#profil">Présentation</a></li>
+        <li><a href="#parcours">Parcours</a></li>
         <ul>
-          <li><a href="#accueil"><i class="navButton navButtonAccueil"></i> <span>Accueil</span></a></li>
-          <li><a href="#profil"><i class="navButton navButtonProfil"></i> <span>Présentation</span></a></li>
-          <li><a href="#parcours"><i class="navButton navButtonParcours"></i> <span>Parcours</span></a></li>
-          <li><a href="#formation"><i class="navButton navButtonFormation"></i> <span>Formation</span></a></li>
-          <li><a href="#realisations"><i class="navButton navButtonRealisation"></i> <span>Réalisations</span></a></li>
+          <li><a href="#formations">Formations et diplômes</a></li>
+          <li><a href="#experiences">Expériences professionnelles</a></li>
         </ul>
-      </nav>
-    </div>
-  </header>
-
-
-  <h1>Bienvenue sur mon portfolio</h1>
-  <section id="accueil">
-    <h2>Mais pourquoi ce portfolio?</h2>
-    <div class="container">
-      
-    </div>
+        <li><a href="#projets">Projets</a></li>
+      </ul>
+    </nav>
   </section>
-  <section id="profil">
-    <h2>Profil</h2>
-    <!-- TODO :
-    - Passions
-    -->
-    <div class="container">
-      <h3>Développeur Fullstack</h3>
-      <p class="written">
-        Après l'obtention de mon Brevet de technicien supérieur - Services informatiques aux organisations, option Solution Logicielle Appliquée au métier, j'ai fait le choix de continuer dans mon cursus de développeur web en choississant la Licence Professionnelle Métiers de l’informatique : applications web.<br/>
-        Mon cursus ayant été réalisé en alternance, j’ai été enrichi par deux années de travail en tant que développeur PHP pour Teamwill group. <br/>
-        Aujourd'hui développeur web au sein de l'entreprise Shop-Hair, je continue de développer mes compétences dans le domaine du développement. <br/>
-      </p>
-      <button type="button" class="downloadLink">Télécharger mon CV</button>
-      <button type="button" class="collapsible">Visualiser mon CV</button>
-      <div class="collapsedContent">
-        <iframe src="assets/docs/VolleNicolas-CurriculumVitaePortfolio.pdf"></iframe>
+  <section id="main">
+    <div id="accueil">
+      <h1>Bienvenue sur mon portfolio</h1>
+    </div>
+    <div id="profil">
+      <h2>Profil</h2>
+      <!-- TODO :
+      - Passions
+      -->
+      <div class="container">
+        <h3>Développeur Fullstack</h3>
+        <p class="written">
+          Après l'obtention de mon Brevet de technicien supérieur - Services informatiques aux organisations, option Solution Logicielle Appliquée au métier, j'ai fait le choix de continuer dans mon cursus de développeur web en choississant la Licence Professionnelle Métiers de l’informatique : applications web.<br/>
+          Mon cursus ayant été réalisé en alternance, j’ai été enrichi par deux années de travail en tant que développeur PHP pour Teamwill group. <br/>
+          Aujourd'hui développeur web au sein de l'entreprise Shop-Hair, je continue de développer mes compétences dans le domaine du développement. <br/>
+        </p>
+        <div id="pdf-viewer">
+          <button type="button" class="download-link" onclick="location.href='./assets/docs/VolleNicolas-CurriculumVitaePortfolio.pdf'">Télécharger mon CV</button>
+          <button type="button" class="collapsible">Visualiser mon CV</button>
+          <div class="collapsed-content">
+            <iframe src="assets/docs/VolleNicolas-CurriculumVitaePortfolio.pdf" view="fit"></iframe>
+          </div>
+        </div>
       </div>
     </div>
-  </section>
-  <section id="parcours">
-    <h2>Parcours</h2>
+    <div id="parcours">
+      <h2>Parcours</h2>
       <!-- TODO :
       -	Ma formation, description de mes formations
       -	Mes compétences techniques…
-      -	Mes expériences (stages) 
       -->
       <div class="container">
-
+        <div id="formations">
+          <h3>Formations et diplômes</h3>
+          <div class="item-list">
+            <h4>LP METIERS DE L’INFORMATIQUE : APPLICATIONS WEB – PARCOURS DEVELOPPEMENT AVANCE D’APPLICATIONS WEB INTERNET ET INTRANET</h4>
+            <h5>2023 - 2024</h5>
+            <p><em>IUT d’Evry Val d’Essonne</em></p>
+            <p>Formation en cours</p>
+          </div>
+          <div class="item-list">
+            <h4>BTS SIO - Option Solution Logicielle Appliquée aux Métiers</h4>
+            <h5>2020 - 2022</h5>
+            <p><em>Ecole IRIS Paris</em></p>
+          </div>
+          <div class="item-list">
+            <h4>Brevet d'aptitude aux fonctions d'animateur en accueils collectifs de mineurs</h4>
+            <h5>2017 - 2021</h5>
+            <p><em>Scouts et Guides de France</em></p>
+            <p>Qualification Accueil de Scoutisme</p>
+          </div>
+          <div class="item-list">
+            <h4>Permis B</h4>
+            <h5>2016</h5>
+          </div>
+          <div class="item-list no-float">
+            <h4>Baccalauréat Scientifique</h4>
+            <h5>2015</h5>
+            <p><em>Lycée Saint-Pierre - Brunoy</em></p>
+            <p>Mention assez bien</p>
+          </div>
+        </div>
+        <div id="experiences">
+          <h3>Expériences professionnelles</h3>
+          <div class="item-list">
+            <h4>Développeur Web</h4>
+            <h5>Depuis Septembre 2023</h5>
+            <p><em>SH Shop Hair</em></p>
+            <ul>
+              <li>Développement d’une plateforme de e-commerce sous Prestashop en se basant sur une maquette Adobe XD</li>
+              <li>Développement de modules pour Prestashop 1.5 et 8.1</li>
+              <li>Gestion de base de données</li>
+            </ul>
+          </div>
+          <div class="item-list">
+            <h4>Professeur Suppléant de Sciences-Physiques</h4>
+            <h5>Janvier 2023 - Juin 2023</h5>
+            <p><em>Lycée Teilhard de Chardin</em></p>
+            <ul>
+              <li>Enseignement des matières Physique-Chimie, Enseignement Scientifique et Chimie pour la Santé en lycée, de niveau Secondes à Terminales, en classe et à domicile</li>
+              <li>Préparation aux étudiants de la filière Sciences et Techniques Sanitaires & Sociales aux épreuves du Baccalauréat</li>
+            </ul>
+          </div>
+          <div class="item-list">
+            <h4>Développeur PHP</h4>
+            <h5>Octobre 2020 - Juillet 2022</h5>
+            <p><em>TeamWill</em></p>
+            <ul>
+              <li>Assurer la maintenance applicative et mettre en place des évolutions sur un logiciel</li>
+              <li>Utiliser des compétences de développement web (PHP, HTML, CSS, JavaScript) et la connaissance du framework Symfony</li>
+            </ul>
+          </div>
+          <div class="item-list">
+            <h4>Assistant de gestion d'annuités</h4>
+            <h5>Juillet 2018 - Juillet 2020</h5>
+            <p><em>Acumass</em></p>
+            <ul>
+              <li>Gestion d’annuités dans la propriété intellectuelle</li>
+              <li>Utilisation de logiciels de traitement (Word, Excel) et du progiciel Siss</li>
+              <li>Contact avec le client</li>
+            </ul>
+          </div>
+          <div class="item-list">
+            <h4>Enquêteur vacataire</h4>
+            <h5>2016 - 2019</h5>
+            <p><em>Cositrex</em></p>
+            <ul>
+              <li>Réalisation d’enquête de rotation du stationnement et de circulation</li>
+              <li>Utilisation de la suite Office (notamment Access) pour le traitement des données recueillies</li>
+            </ul>
+          </div>
+          <div class="item-list no-float">
+            <h4>Animateur commercial</h4>
+            <h5>Décembre 2017</h5>
+            <p><em>Nestlé</em></p>
+            <ul>
+              <li>Animation au point de vente proposant des réductions à la clientèle</li>
+            </ul>
+          </div>
+        </div>
       </div>
-  </section>
-  <section>
-    <h2>Projets</h2>
-    <!-- TODO :
-    - Réalisations
-    - Projet professionnel
-    -->
-  </section>
-  <section>
-    <h2>Documents</h2>
-
+    </div>
+    <div id="projets">
+      <h2>Projets</h2>
+      <!-- TODO :
+      - Réalisations
+      - Projet professionnel
+      -->
+    </div>
   </section>
 
   <script src="assets/js/main.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

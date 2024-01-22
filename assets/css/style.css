@@ -1,32 +1,127 @@
+body{
+  margin: 0;
+  padding: 0;
+  background: #040b14;
+}
+
+/* Fonts */
+*{
+  font-family: "Open Sans", sans-serif;
+  color: #2272FF ;
+}
+
 h1, h2{
   font-family: 'Raleway', sans-serif; 
   font-weight: 700;
+  font-size: large;
+  text-align: center;
+}
+
+h1{
+  font-size: 26px;
+}
+
+h2{
+  padding: 10px;
+  border-bottom: 1px solid grey;
 }
 
 p.written{
   font-family: 'Kalam', cursive;
 }
 
-div.menu{
-  min-width: 100px;
-  max-width: 300px;
-  display: block;
-  float: left;
-  background-color: #cfcfcf;
+a {
+  color: #149ddd;
+  text-decoration: none;
 }
 
-div{
-  float: right;
+a:hover {
+  color: #37b3ed;
+  text-decoration: none;
+}
+
+/* Sidebar */
+section#sidebar{
+  position: fixed;
+  width: 20%;
+  height: 100%;
+  padding: 0 10px;
+  text-align: center;
+}
+
+img#profil-img{
+  height: 200px;
+  width: 200px;
+  border-radius: 75px;
+  padding-top: 20px;
+}
+
+nav{
+  text-align: justify;
+  padding: 0 10%;
+}
+
+nav ul{
+  padding: 0;
+}
+
+nav ul li{
+  list-style: none;
+}
+
+nav ul ul li{
+  padding-left: 20px;
 }
 
 img{
   height: 250px;
   width: 250px;
+  border-radius: 100px;;
+}
+
+/* Main */
+section#main{
+  float: right;
+  width: calc(80% - 20px);
+}
+
+section#main div{
   padding: 10px;
 }
 
-/* Collapsible */
-.collapsible, .downloadLink {
+div#profil, div#projets{
+  background: #f5f8fd;
+}
+
+div#parcours{
+  background: #e2e4e7;
+}
+
+div.item-list{
+  float: left;
+  width: 50%;
+  height: 250px;
+  box-sizing: border-box;
+  border: solid 1px grey;
+  margin-bottom: 5px;
+  overflow: auto;
+}
+
+div.item-list h4, div.item-list h5, div.item-list p{
+  padding: 0 10px;
+}
+
+div.no-float{
+  float:none;
+}
+
+/* Pdf Viewer */
+div#pdf-viewer{
+  margin: auto;
+  text-align: center;
+}
+
+.collapsible, .download-link {
   background-color: #eee;
   color: #444;
   cursor: pointer;
@@ -39,12 +134,12 @@ img{
   text-align: center;
 }
 
-.active, .collapsible:hover {
+.active, .collapsible:hover, .download-link:hover {
   background-color: #ccc;
 }
 
-.collapsedContent {
-  padding: 0 18px;
+.collapsed-content {
+  padding: 0 !important;
   background-color: white;
   max-height: 0;
   overflow: hidden;
@@ -54,5 +149,6 @@ img{
 
 iframe{
   height: 700px;
-  width: 700px;
+  width: 100%;
+  border: 0;
 }
