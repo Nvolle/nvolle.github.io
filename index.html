@@ -47,15 +47,18 @@
       <div class="profile">
         <img src="assets/img/profil-img.jpg" alt="" class="img-fluid rounded-circle">
         <h1 class="text-light"><a href="index.html">Nicolas Volle</a></h1>
+        <h1><a href="https://github.com/Nvolle"><i class="bi bi-github"></i></a></h1>
       </div>
 
       <nav id="navbar" class="nav-menu navbar">
         <ul>
           <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Accueil</span></a></li>
-          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>A propos</span></a></li>
+          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>À propos</span></a></li>
+          <li><a href="#skills" class="nav-link scrollto"><i class="bi bi-award"></i> <span>Compétences</span></a></li>
           <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Parcours</span></a></li>
-          <li><a href="#services" class="nav-link scrollto"><i class="bx bx-briefcase-alt-2"></i> <span>La formation</span></a></li>
-          <li><a href="#contact" class="nav-link scrollto"><i class="bx bi bi-send"></i> <span>Contact</span></a></li>
+          <li><a href="#services" class="nav-link scrollto"><i class="bi bi-book"></i> <span>Formation en cours</span></a></li>
+          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Réalisations</span></a></li>
+          <li><a href="#contact" class="nav-link scrollto"><i class="bi bi-envelope"></i> <span>Contact</span></a></li>
         </ul>
       </nav><!-- .nav-menu -->
     </div>
@@ -65,18 +68,18 @@
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <div class="hero-container" data-aos="fade-in">
       <h1>Nicolas Volle</h1>
-      <p><span class="typed" data-typed-items="Etudiant en Licence Pro , Développeur Web, Développeur Prestashop"></span></p>
+      <p><span class="typed" data-typed-items="Développeur Web, Etudiant en Licence"></span></p>
     </div>
   </section><!-- End Hero -->
 
   <main id="main">
 
     <!-- ======= About Section ======= -->
-    <section id="about" class="about">
+    <section id="about" class="about section-bg">
       <div class="container">
 
         <div class="section-title">
-          <h2>A propos</h2>
+          <h2>À propos</h2>
           <p></p>
         </div>
 
@@ -120,7 +123,7 @@
     </section><!-- End About Section -->
 
     <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills section-bg">
+    <section id="skills" class="skills">
       <div class="container">
 
         <div class="section-title">
@@ -128,41 +131,19 @@
         </div>
 
         <div class="row skills-content">
+          <div class="col-lg-6 bordered-right" data-aos="fade-up">
           <h3>Informatique</h3>
-          <div class="col-lg-6" data-aos="fade-up">
-
-            <div class="progress">
-              <span class="skill"><b>Développement Web</b> : HTML, CSS, JavaScript, PHP</span>
-              <span class="skill">SQL, C, C++, JAVA, Python</span>
-            </div>
-
+              <p class="skill"><b>Développement Web</b> : HTML, CSS, JavaScript, PHP</p>
+              <p class="skill">SQL, C, C++, JAVA, Python</p>
+              <p class="skill">Systèmes GNU/Linux, Virtualisation, Gestion d'un serveur informatique</p>
           </div>
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="progress">
-              <span class="skill">Systèmes GNU/Linux, Virtualisation, Gestion d'un serveur informatique</span>
-            </div>
-
-          </div>
-
           <h3>Langues</h3>
-          <div class="col-lg-6" data-aos="fade-up">
-
-            <div class="progress">
-              <span class="skill">Français - Langue maternelle</span>
-              <span class="skill">Allemand - Niveau B1</span>
-            </div>
-
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="progress">
-              <span class="skill">Anglais - Niveau B2</span>
-              <span class="skill">Chinois - Notions</span>
-            </div>
-
+              <p class="skill">Français - Langue maternelle</p>
+              <p class="skill">Allemand - Niveau B1</p>
+              <p class="skill">Anglais - Niveau B2</p>
+              <p class="skill">Chinois - Notions</p>
           </div>
         </div>
 
@@ -170,11 +151,20 @@
     </section><!-- End Skills Section -->
 
     <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
+    <section id="resume" class="resume section-bg">
       <div class="container">
 
         <div class="section-title">
           <h2>Parcours</h2>
+        </div>
+
+        <div id="pdf-viewer">
+          <button type="button" class="download-link" onclick="location.href='./assets/docs/VolleNicolas-CurriculumVitaePortfolio.pdf'">Télécharger mon CV</button>
+          <button type="button" class="collapsible">Visualiser mon CV</button>
+          <div class="collapsed-content">
+            <iframe src="assets/docs/VolleNicolas-CurriculumVitaePortfolio.pdf" view="fit"></iframe>
+          </div>
+          <br/>
         </div>
 
         <div class="row">
@@ -269,13 +259,6 @@
             </div>
           </div>
         </div>
-        <div id="pdf-viewer">
-          <button type="button" class="download-link" onclick="location.href='./assets/docs/VolleNicolas-CurriculumVitaePortfolio.pdf'">Télécharger mon CV</button>
-          <button type="button" class="collapsible">Visualiser mon CV</button>
-          <div class="collapsed-content">
-            <iframe src="assets/docs/VolleNicolas-CurriculumVitaePortfolio.pdf" view="fit"></iframe>
-          </div>
-        </div>
 
       </div>
     </section><!-- End Resume Section -->
@@ -318,7 +301,7 @@
           <p class="fw-bold">Les parcours :</p>
         </div>
         <div class="row">
-          <div class="col-lg-6" data-aos="fade-up">
+          <div class="col-lg-6 bordered-right" data-aos="fade-up">
             <h4>Parcours ASR2I</h4>
             <p class="fst-italic">
               Administration et Sécurisation des Réseaux et services Internet et Intranet
@@ -352,9 +335,146 @@
             </p>
           </div>
         </div>
-        <center><p>Plus d'infos <a href="https://www.iut-evry.fr/nos-formations/lp/lp-metiers-de-linformatique-applications-web/">ici</a></p></center>
+        <br/>
+        <center><p class="fst-italic" data-aos="fade-up">Plus d'infos <a href="https://www.iut-evry.fr/nos-formations/lp/lp-metiers-de-linformatique-applications-web/">ici</a></p></center>
       </div>
     </section><!-- End Services Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Réalisations</h2>
+        </div>
+
+        <div class="row" data-aos="fade-up">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">Tout voir</li>
+              <li data-filter=".filter-school">Réalisations en formation</li>
+              <li data-filter=".filter-work">Réalisations en entreprise</li>
+              <li data-filter=".filter-pers">Réalisations personnelles</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-school">
+            <div class="portfolio-wrap">
+              <h3>Installation et configuration d'un serveur virtualisé avec un gestionnaire d'incidents</h3>
+              <hr>
+              <ul>
+                <li>Installation et utilisation d'un hyperviseur de type 2 (Oracle VM Virtualbox)</li>
+                <li>Installation et administration de machines virtuelles (Windows Server, Windows 7 Pro)</li>
+                <li>Déploiement et utilisation d'un gestionnaire d'incidents (GLPI)</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-work">
+            <div class="portfolio-wrap">
+              <h3>Mise en place de tests unitaires et d'une gestion d'exception</h3>
+              <hr>
+              <ul>
+                <li>Utilisation d'un langage web (PHP)</li>
+                <li>Utilisation d'un framework de tests (PHPUnit)</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-school">
+            <div class="portfolio-wrap">
+              <h3>Conception et développement du site internet troc.fr avec la technologie PHP-MySQL et HTML-CSS en utilisant le modèle MVC</h3>
+              <hr>
+              <ul>
+                <li>Utilisation de langages web (HTML, CSS, PHP, Javascript)</li>
+                <li>Utilisation d'un langage de base de données (SQL) et d'un système de gestion de base de données (MySQL)</li>
+                <li>Utilisation d'un service web d'hébergement et de gestion de versions (Github)</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-work">
+            <div class="portfolio-wrap">
+              <h3>Rédaction de documentation technique accessible à des nons informaticiens</h3>
+              <hr>
+              <ul>
+                <li>Travail de pair avec une personne du métier</li>
+                <li>Rigueur et précision lors de la rédaction de la documentation</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-pers">
+            <div class="portfolio-wrap">
+              <h3>Installations de machines virtuelles sous diverses distributions Linux</h3>
+              <hr>
+              <ul>
+                <li>Création et administration de machines virtuelles (Oracle VM Virtualbox)</li>
+                <li>Installation d'un système GNU/Linux (Debian, Arch, NixOS)</li>
+                <li>Utilisation de protocoles de communication sécurisés (SSH, FTP)</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-pers">
+            <div class="portfolio-wrap">
+              <h3>Mise en place d'un serveur à l'aide d'un Raspberry Pi</h3>
+              <hr>
+              <ul>
+                <li>Installation d'un système GNU/Linux (Raspbian)</li>
+                <li>Utilisation de protocoles de communication sécurisés (SSH, FTP)</li>
+                <li>Utilisation de commandes Git</li>
+              </ul>
+              <p>
+                Pour un projet personnel, j'ai eu pour but de monter à mon domicile un serveur Web pour mieux comprendre le fonctionnement et tester des outils de développement et de déploiement sur un serveur distant.<br/>
+                J'ai ainsi mis en place à l'aide d'un tunnel SSH l'environnement de mon serveur sur un Raspberry Pi, puis à l'aide d'un FTP et de commandes Git j'ai pu migrer des fichiers et des projets sur ce serveur.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-work">
+            <div class="portfolio-wrap">
+              <h3>Développement de modules spécifiques pour Prestashop 8.1</h3>
+              <hr>
+              <ul>
+                <li>Utilisation d'un langage web (PHP)</li>
+                <li>Utilisation d'un framework (Symfony 4)</li>
+                <li>Utilisation de protocoles de communication sécurisés (SSH, FTP)</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-pers">
+            <div class="portfolio-wrap">
+              <h3>Développement d'une application de centralisation d'informations pour un cadre associatif</h3>
+              <hr>
+              <ul>
+                <li>Utilisation de langages web (HTML, CSS, PHP, Javascript)</li>
+                <li>Utilisation d'un langage de base de données (SQL) et d'un système de gestion de base de données (MySQL)</li>
+                <li>Utilisation d'un service web d'hébergement et de gestion de versions (Github)</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-school">
+            <div class="portfolio-wrap">
+              <h3>Développement de scripts PHP communiquant avec des API externes pour migrer des données vers une base de données Prestashop</h3>
+              <hr>
+              <ul>
+                <li>Utilisation de technologies d'API</li>
+                <li>Utilisation d'un langage de base de données (SQL) et d'un système de gestion de base de données (MySQL)</li>
+                <li>Utilisation d'un gestionnaire de versions (Github)</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
@@ -364,8 +484,9 @@
           <h2>Contact</h2>
         </div>
 
-        <div class="row" data-aos="fade-in">
-          <h3>N'hésitez pas à me contacter via mon mail : <a href="mailto:nicolas.volle.97@gmail.com">nicolas.volle.97@gmail.com</a></h3>
+        <div class="row">
+          <h4>N'hésitez pas à me contacter via mon mail : <a href="mailto:nicolas.volle.97@gmail.com">nicolas.volle.97@gmail.com <i class="bi bi-send"></i></a></h4>
+          <h4>Vous pouvez également retrouver mes productions sur mon Github (En cours) : <a href="https://github.com/Nvolle">https://github.com/Nvolle <i class="bi bi-github"></i></a></h4>
         </div>
 
       </div>

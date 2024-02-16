@@ -27,6 +27,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
 
+.bordered-right {
+  border-right: solid black 1px;
+}
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -76,7 +80,7 @@ h1, h2, h3, h4, h5, h6 {
 #header .profile img {
   margin: 15px auto;
   display: block;
-  width: 120px;
+  width: 250px;
   border: 8px solid #2c2f3f;
 }
 #header .profile h1 {
@@ -261,7 +265,8 @@ section {
 }
 
 .section-bg {
-  background: #f5f8fd;
+  background: rgb(255,255,255);
+  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(227,229,255,1) 5%, rgba(227,229,255,1) 50%, rgba(227,229,255,1) 95%, rgba(255,255,255,1) 100%);
 }
 
 .section-title {
@@ -279,7 +284,7 @@ section {
   content: "";
   position: absolute;
   display: block;
-  width: 50px;
+  width: 10%;
   height: 3px;
   background: #dd1414;
   bottom: 0;
@@ -317,6 +322,10 @@ section {
 }
 .about .content p:last-child {
   margin-bottom: 0;
+}
+
+.about img {
+  border-radius: 20% 0;
 }
 
 /*--------------------------------------------------------------
@@ -365,13 +374,14 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Akills
+# Skills
 --------------------------------------------------------------*/
 .skills .progress {
   height: 60px;
   display: block;
   background: none;
   border-radius: 0;
+  font-size: 14px;
 }
 .skills .progress .skill {
   padding: 0;
@@ -485,22 +495,26 @@ section {
   margin-right: 0;
 }
 .portfolio .portfolio-wrap {
+  padding: 10px;
   transition: 0.3s;
   position: relative;
   overflow: hidden;
   z-index: 1;
+  padding: 20px;
 }
 .portfolio .portfolio-wrap::before {
   content: "";
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(0, 0, 0, 0.25);
   position: absolute;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
-  transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.5s;
   z-index: 2;
   opacity: 0;
+  padding: 10px;
+  border-radius: 10%;
 }
 .portfolio .portfolio-wrap .portfolio-links {
   opacity: 1;
@@ -537,6 +551,10 @@ section {
 .portfolio .portfolio-wrap:hover .portfolio-links {
   opacity: 1;
   bottom: 0;
+}
+
+.portfolio-wrap h3 {
+  text-align: center;
 }
 
 /*--------------------------------------------------------------
@@ -960,16 +978,13 @@ div#pdf-viewer{
 }
 
 .collapsible, .download-link {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
+  background-color: #000000;
+  color: #ffffff;
   width: 200px;
+  margin: 10px 40px;
+  padding: 20px;
+  border-radius: 10px;
   border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-  text-align: center;
 }
 
 .collapsed-content {
